@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:backgroundTint="#65BCF3"
-    tools:context=".addAccount" >
+    android:background="@drawable/frozenlake"
+    tools:context=".addAccount">
 
     <EditText
         android:id="@+id/introLogin"
@@ -16,7 +15,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/new_edit_text"
         android:ems="10"
-        android:hint="Login"
+        android:hint="E-mail"
         android:inputType="textPersonName"
         android:padding="6dp"
         android:visibility="visible"
@@ -28,12 +27,12 @@
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="11dp"
         android:background="@drawable/new_button"
-        android:text="Nowe konto"
+        android:text="Załóż nowe konto"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/onClose"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,12 +59,12 @@
 
     <Button
         android:id="@+id/onClose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
         android:layout_marginBottom="149dp"
         android:background="@drawable/new_button"
         android:onClick="onClose"
-        android:text="Cofnij"
+        android:text="Wróc do menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

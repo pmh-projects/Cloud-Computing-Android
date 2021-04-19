@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:backgroundTint="#65BCF3"
-    tools:context=".MainActivity" >
+    android:background="@drawable/frozenlake"
+    tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/introLogin"
@@ -28,8 +27,8 @@
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="11dp"
         android:background="@drawable/new_button"
@@ -63,8 +62,8 @@
         android:id="@+id/videoIntro"
         android:layout_width="266dp"
         android:layout_height="134dp"
-        android:layout_marginTop="99dp"
-        android:layout_marginBottom="61dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="20dp"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/introLogin"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,8 +75,8 @@
         android:id="@+id/onClose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="185dp"
         android:background="@drawable/new_button"
-        android:layout_marginBottom="149dp"
         android:onClick="onClose"
         android:text="Zamknij"
         app:layout_constraintBottom_toBottomOf="parent"

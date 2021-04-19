@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
         login = findViewById(R.id.btnLogin);
         //Video do intra
         videoIntro = findViewById(R.id.videoIntro);
-        videoIntro.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.sample3);
+        videoIntro.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.globe);
 
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoIntro);

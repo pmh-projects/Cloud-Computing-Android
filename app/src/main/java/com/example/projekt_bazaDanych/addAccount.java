@@ -88,7 +88,7 @@ public class addAccount extends AppCompatActivity {
                             if(!task.isSuccessful()) {
                                 Toast.makeText(addAccount.this, "Nie udało sie założyc konta", Toast.LENGTH_LONG).show();
                             } else {
-                                Toast.makeText(addAccount.this, "Udało sie założyć konto", Toast.LENGTH_LONG).show();
+                                Toast.makeText(addAccount.this, "Nowe konto zostało utworzone", Toast.LENGTH_LONG).show();
                             }
                         }
                     });

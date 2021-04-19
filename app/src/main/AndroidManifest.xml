@@ -11,7 +11,9 @@
         android:label="Baza Klientów"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        >
 
         <activity
             android:name=".MainActivity"
@@ -28,17 +30,14 @@
             android:name=".addAccount"
             android:label="Dodaj nowy login" />
         <activity
+            android:name=".CustomerList"
+            android:label="Lista" />
+        <activity
             android:name=".add"
             android:label="Dodaj do bazy" />
         <activity
-            android:name=".search"
-            android:label="Edytuj użytkownika" />
-        <activity
             android:name=".Menu"
             android:label="Menu"></activity>
-        <activity
-            android:name=".delete"
-            android:label="Usuń użytkownika" />
     </application>
 
 </manifest>

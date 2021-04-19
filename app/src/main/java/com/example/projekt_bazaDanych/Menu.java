@@ -44,15 +44,15 @@ public class Menu extends AppCompatActivity {
 
     //"przycisk szukaj" - przejście do activity z możliwością wyszukania i edycji rekordu'u
     public void onSearch(View view) {
-        Intent searchRecord = new Intent(this, search.class);
+        Intent searchRecord = new Intent(this, CustomerList.class);
         startActivity(searchRecord);
         finish();
     }
 
-    public void onDelete(View view){
+    public void onEdit(View view){
 
-        Intent deleteRecord = new Intent(this, delete.class);
-        startActivity(deleteRecord);
+        Intent edit = new Intent(this, update.class);
+        startActivity(edit);
         finish();
 
     }

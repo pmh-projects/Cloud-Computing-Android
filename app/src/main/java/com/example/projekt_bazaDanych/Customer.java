@@ -14,6 +14,8 @@ public class Customer {
             this.stringEmail = stringEmail;
         }
 
+    public Customer() {
+    }
 
     public String getStringName() {
         return stringName;
