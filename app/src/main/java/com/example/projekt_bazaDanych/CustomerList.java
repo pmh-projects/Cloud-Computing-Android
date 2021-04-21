@@ -56,8 +56,8 @@ private RecyclerView mRecyclerView;
         switch(item.getItemId()){
             case R.id.deleteBtn:
                 Intent backToMenu = new Intent(this, com.example.projekt_bazaDanych.Menu.class);
-                startActivity(backToMenu);
                 finish();
+                startActivity(backToMenu);
                 return true;
         }
         return super.onOptionsItemSelected(item);

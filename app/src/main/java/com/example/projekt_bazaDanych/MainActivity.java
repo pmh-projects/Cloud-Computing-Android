@@ -49,24 +49,6 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
 
-        database = FirebaseDatabase.getInstance();
-        databaseReference = database.getReference("message");
-
-        databaseReference.setValue("CloudComputing");
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                Toast.makeText(MainActivity.this, value, Toast.LENGTH_LONG).show();
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -98,8 +80,9 @@ public class MainActivity extends AppCompatActivity {
                                Toast.makeText(MainActivity.this,"Logowanie powiodło się",Toast.LENGTH_LONG).show();
 
                                Intent logg =new Intent(MainActivity.this, Menu.class);
-                               startActivity(logg);
                                finish();
+                               startActivity(logg);
+
                            }
                         }
                     });

@@ -52,11 +52,11 @@ public class RecyclerView_Config {
         }
 
         public void bind(Customer customer, String key) {
-            mName.setText(customer.getStringName());
-            mSurnname.setText(customer.getStringSurname());
-            mEmail.setText(customer.getStringEmail());
-            mAddress.setText(customer.getStringAddress());
-            mPhone.setText(customer.getStringPhone());
+            mName.setText(customer.getName());
+            mSurnname.setText(customer.getSurname());
+            mEmail.setText(customer.getEmail());
+            mAddress.setText(customer.getAddress());
+            mPhone.setText(customer.getPhone());
             this.key = key;
         }
     }

@@ -7,15 +7,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.database.Query;
 import com.mobsandgeeks.saripaar.ValidationError;
 import com.mobsandgeeks.saripaar.Validator;
 import com.mobsandgeeks.saripaar.annotation.Email;
 import com.mobsandgeeks.saripaar.annotation.NotEmpty;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -26,19 +25,19 @@ import java.util.List;
 
 
 
-public class add extends AppCompatActivity implements Validator.ValidationListener {
+public class addCustomer extends AppCompatActivity implements Validator.ValidationListener {
 
-    EditText name, surname, phone;
     //Wymuszenie wpisania wartości do pola address
-    @NotEmpty(message = "Pole adres nie może być puste")
-    EditText address;
+    @NotEmpty(message = "Pole nie może być puste")
+    EditText address, name, surname, phone;
     //Wymuszenie wpisania poprawnej wartości do pola email
     @Email(message = "Wpisz poprawny adres e-mail")
     EditText  email;
-    String stringName, stringSurname, stringAddress, stringPhone, stringEmail;
+    @NotEmpty(message = "Pole nie może być puste")
+    String Name, Surname, Address, Phone, Email;
     Validator validatonCheck;
     Button validationOnAdd;
-
+    DatabaseReference base;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,54 +70,62 @@ public class add extends AppCompatActivity implements Validator.ValidationListen
     public void onBack(View view) {
 
         Intent backtoMenu = new Intent(this, Menu.class);
+        finishAndRemoveTask();
         startActivity(backtoMenu);
-        finish();
     }
 
 
-    //Walidacja danych; w wypadku sukcesu wysyłka danych do bazy. W innym wypadku pojawi się komunikat z błędem
+
     @Override
     public void onValidationSucceeded() {
 
-        stringName = name.getText().toString().trim();
-        stringSurname = surname.getText().toString().trim();
-        stringAddress = address.getText().toString().trim();
-        stringPhone = phone.getText().toString().trim();
-        stringEmail = email.getText().toString().trim();
+        Name = name.getText().toString().trim();
+        Surname = surname.getText().toString().trim();
+        Address = address.getText().toString().trim();
+        Phone = phone.getText().toString().trim();
+        Email = email.getText().toString().trim();
 
-        Customer obj = new Customer(stringName, stringSurname, stringAddress, stringPhone, stringEmail);
+        base = FirebaseDatabase.getInstance().getReference().child("customers").child(Name);
 
-        FirebaseDatabase db=FirebaseDatabase.getInstance();
+        base.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists()) {
+                    Toast.makeText(getApplicationContext(), "Użytkownik o podanej nazwie istnieje w bazie.", Toast.LENGTH_LONG).show();
 
-        DatabaseReference node=db.getReference("customers");
-        node.child(stringName).setValue(obj);
+                }else{
 
-        name.setText("");
-        surname.setText("");
-        address.setText("");
-        phone.setText("");
-        email.setText("");
+                    Customer newCustomer = new Customer(Name, Surname, Address, Phone, Email);
 
-        Toast.makeText(getApplicationContext(), "Dodano", Toast.LENGTH_LONG).show();
+                    FirebaseDatabase newCustomerDatabase = FirebaseDatabase.getInstance();
 
+                    DatabaseReference base= newCustomerDatabase.getReference("customers");
+                    //dodanie nazwy głównej wpisu w bazie
+                    base.child(Name).setValue(newCustomer);
 
-        //zmienna action, za pomocą której rozpoznawane jest działanie do wykonania w "silniku"
-//        String action = "sendData";
-//
-//        workInBackground workInBackground = new workInBackground(this);
-//        workInBackground.execute(action, stringName, stringSurname, stringAddress, stringPhone, stringEmail);
+                    Toast.makeText(getApplicationContext(), "Dodano nowe dane.", Toast.LENGTH_LONG).show();
+                    Intent backtoMenu = new Intent(addCustomer.this, Menu.class);
+                    finishAndRemoveTask();
+                    startActivity(backtoMenu);
+                }
 
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
     //W wypadku wprowadzenia błędnych danych pojawi się error, który jest zdefiniowany w message
     @Override
     public void onValidationFailed(List<ValidationError> errs) {
         for(ValidationError err : errs) {
             View view = err.getView();
-            String message = err.getCollatedErrorMessage(this);
+            String infoMess = err.getCollatedErrorMessage(this);
             if(view instanceof EditText) {
-                ((EditText) view).setError(message);
+                ((EditText) view).setError(infoMess);
             } else {
-                Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+                Toast.makeText(this, infoMess, Toast.LENGTH_LONG).show();
             }
         }
     }

@@ -33,7 +33,7 @@
             android:name=".CustomerList"
             android:label="Lista" />
         <activity
-            android:name=".add"
+            android:name=".addCustomer"
             android:label="Dodaj do bazy" />
         <activity
             android:name=".Menu"

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/frozenlake"
-    tools:context=".add">
+    tools:context=".addCustomer">
 
     <Button
         android:id="@+id/deleteBtn"
@@ -47,7 +47,7 @@
         android:layout_marginBottom="23dp"
         android:background="@drawable/new_edit_text"
         android:ems="10"
-        android:hint="Imię"
+        android:hint="Unikalna nazwa użytkownika"
         android:inputType="textPersonName"
         android:padding="6dp"
         app:layout_constraintBottom_toTopOf="@+id/addSurname"
@@ -64,7 +64,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/new_edit_text"
         android:ems="10"
-        android:hint="Nazwisko"
+        android:hint="Imie i nazwisko"
         android:inputType="textPersonName"
         android:padding="6dp"
         app:layout_constraintBottom_toTopOf="@+id/addAddress"

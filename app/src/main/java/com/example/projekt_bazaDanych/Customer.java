@@ -4,56 +4,56 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Customer {
 
-        private String stringName, stringSurname, stringAddress, stringPhone, stringEmail;
+        private String Name, Surname, Address, Phone, Email;
 
-        public Customer(String stringName,String stringSurname,String stringAddress,String stringPhone,String stringEmail) {  //konstruktor
-            this.stringName = stringName;
-            this.stringSurname = stringSurname;
-            this.stringAddress = stringAddress;
-            this.stringPhone = stringPhone;
-            this.stringEmail = stringEmail;
+        public Customer(String Name,String Surname,String Address,String Phone,String Email) {  //konstruktor
+            this.Name = Name;
+            this.Surname = Surname;
+            this.Address = Address;
+            this.Phone = Phone;
+            this.Email = Email;
         }
 
     public Customer() {
     }
 
-    public String getStringName() {
-        return stringName;
+    public String getName() {
+        return Name;
     }
 
-    public void setStringName(String stringName) {
-        this.stringName = stringName;
+    public void setName(String Name) {
+        this.Name = Name;
     }
 
-    public String getStringSurname() {
-        return stringSurname;
+    public String getSurname() {
+        return Surname;
     }
 
-    public void setStringSurname(String stringSurname) {
-        this.stringSurname = stringSurname;
+    public void setSurname(String Surname) {
+        this.Surname = Surname;
     }
 
-    public String getStringAddress() {
-        return stringAddress;
+    public String getAddress() {
+        return Address;
     }
 
-    public void setStringAddress(String stringAddress) {
-        this.stringAddress = stringAddress;
+    public void setAddress(String Address) {
+        this.Address = Address;
     }
 
-    public String getStringPhone() {
-        return stringPhone;
+    public String getPhone() {
+        return Phone;
     }
 
-    public void setStringPhone(String stringPhone) {
-        this.stringPhone = stringPhone;
+    public void setPhone(String Phone) {
+        this.Phone = Phone;
     }
 
-    public String getStringEmail() {
-        return stringEmail;
+    public String getEmail() {
+        return Email;
     }
 
-    public void setStringEmail(String stringEmail) {
-        this.stringEmail = stringEmail;
+    public void setEmail(String Email) {
+        this.Email = Email;
     }
 }
