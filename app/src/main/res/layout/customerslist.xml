@@ -75,16 +75,16 @@
         android:id="@+id/imageView3"
         android:layout_width="43dp"
         android:layout_height="170dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="?android:attr/fastScrollThumbDrawable"
-        tools:layout_editor_absoluteX="-8dp"
         tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="62dp"
         android:layout_height="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="?android:attr/fastScrollThumbDrawable"
-        tools:layout_editor_absoluteX="369dp"
         tools:layout_editor_absoluteY="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
