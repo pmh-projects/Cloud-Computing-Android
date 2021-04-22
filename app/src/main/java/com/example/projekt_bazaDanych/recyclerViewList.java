@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 
-public class RecyclerView_Config {
+public class recyclerViewList {
 
     private Context mContext;
     private CustomerAdapter mCustomerAdapter;
@@ -32,31 +32,31 @@ public class RecyclerView_Config {
 
     class CustomerItemView extends RecyclerView.ViewHolder {
 
-        private TextView mName;
-        private TextView mSurnname;
-        private TextView mAddress;
-        private TextView mPhone;
-        private TextView mEmail;
+        private TextView uniqueName;
+        private TextView nameSurname;
+        private TextView Address;
+        private TextView Phone;
+        private TextView Email;
 
         private String key;
 
         public CustomerItemView(ViewGroup parent) {
             super(LayoutInflater.from(mContext).inflate(R.layout.customerslist, parent, false));
 
-            mName = (TextView) itemView.findViewById(R.id.customerNameText);
-            mSurnname = (TextView) itemView.findViewById(R.id.customerNameText2);
-            mEmail = (TextView) itemView.findViewById(R.id.emailText);
-            mAddress = (TextView) itemView.findViewById(R.id.addressText);
-            mPhone = (TextView) itemView.findViewById(R.id.phoneText);
+            uniqueName = (TextView) itemView.findViewById(R.id.customerNameText);
+            nameSurname = (TextView) itemView.findViewById(R.id.customerNameText2);
+            Email = (TextView) itemView.findViewById(R.id.emailText);
+            Address = (TextView) itemView.findViewById(R.id.addressText);
+            Phone = (TextView) itemView.findViewById(R.id.phoneText);
 
         }
 
         public void bind(Customer customer, String key) {
-            mName.setText(customer.getUniqueName());
-            mSurnname.setText(customer.getNameSurname());
-            mEmail.setText(customer.getEmail());
-            mAddress.setText(customer.getAddress());
-            mPhone.setText(customer.getPhone());
+            uniqueName.setText(customer.getUniqueName());
+            nameSurname.setText(customer.getNameSurname());
+            Email.setText(customer.getEmail());
+            Address.setText(customer.getAddress());
+            Phone.setText(customer.getPhone());
             this.key = key;
         }
     }

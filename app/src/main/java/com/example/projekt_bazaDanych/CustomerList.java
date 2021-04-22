@@ -25,7 +25,7 @@ private RecyclerView mRecyclerView;
             @Override
             public void DataIsLoaded(List<Customer> customers, List<String> keys) {
                 findViewById(R.id.progressBar).setVisibility(View.GONE);
-                new RecyclerView_Config().setConfig(mRecyclerView,CustomerList.this, customers,keys);
+                new recyclerViewList().setConfig(mRecyclerView,CustomerList.this, customers,keys);
             }
 
             @Override
