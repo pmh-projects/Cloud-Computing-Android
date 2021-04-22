@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Customer {
 
-        private String Name, Surname, Address, Phone, Email;
+        private String UniqueName, NameSurname, Address, Phone, Email;
 
-        public Customer(String Name,String Surname,String Address,String Phone,String Email) {  //konstruktor
-            this.Name = Name;
-            this.Surname = Surname;
+        public Customer(String UniqueName,String NameSurname,String Address,String Phone,String Email) {  //konstruktor
+            this.UniqueName = UniqueName;
+            this.NameSurname = NameSurname;
             this.Address = Address;
             this.Phone = Phone;
             this.Email = Email;
@@ -17,20 +17,20 @@ public class Customer {
     public Customer() {
     }
 
-    public String getName() {
-        return Name;
+    public String getUniqueName() {
+        return UniqueName;
     }
 
-    public void setName(String Name) {
-        this.Name = Name;
+    public void setgetUniqueName(String UniqueName) {
+        this.UniqueName = UniqueName;
     }
 
-    public String getSurname() {
-        return Surname;
+    public String getNameSurname() {
+        return NameSurname;
     }
 
-    public void setSurname(String Surname) {
-        this.Surname = Surname;
+    public void setNameSurname(String NameSurname) {
+        this.NameSurname = NameSurname;
     }
 
     public String getAddress() {

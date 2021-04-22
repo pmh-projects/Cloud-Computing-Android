@@ -29,12 +29,12 @@ public class addCustomer extends AppCompatActivity implements Validator.Validati
 
     //Wymuszenie wpisania wartości do pola address
     @NotEmpty(message = "Pole nie może być puste")
-    EditText address, name, surname, phone;
+    EditText address, uniquename, namesurname, phone;
     //Wymuszenie wpisania poprawnej wartości do pola email
     @Email(message = "Wpisz poprawny adres e-mail")
     EditText  email;
     @NotEmpty(message = "Pole nie może być puste")
-    String Name, Surname, Address, Phone, Email;
+    String UniqueName, NameSurname, Address, Phone, Email;
     Validator validatonCheck;
     Button validationOnAdd;
     DatabaseReference base;
@@ -45,8 +45,8 @@ public class addCustomer extends AppCompatActivity implements Validator.Validati
         setContentView(R.layout.activity_add);
 
         //Wyciągniecie treści z obrazka
-        name = (EditText) findViewById(R.id.addName);
-        surname = (EditText) findViewById(R.id.addSurname);
+        uniquename = (EditText) findViewById(R.id.addName);
+        namesurname = (EditText) findViewById(R.id.addSurname);
         address = (EditText) findViewById(R.id.addAddress);
         phone = (EditText) findViewById(R.id.addPhone);
         email = (EditText) findViewById(R.id.addEmail);
@@ -79,13 +79,13 @@ public class addCustomer extends AppCompatActivity implements Validator.Validati
     @Override
     public void onValidationSucceeded() {
 
-        Name = name.getText().toString().trim();
-        Surname = surname.getText().toString().trim();
+        UniqueName = uniquename.getText().toString().trim();
+        NameSurname = namesurname.getText().toString().trim();
         Address = address.getText().toString().trim();
         Phone = phone.getText().toString().trim();
         Email = email.getText().toString().trim();
 
-        base = FirebaseDatabase.getInstance().getReference().child("customers").child(Name);
+        base = FirebaseDatabase.getInstance().getReference().child("customers").child(UniqueName);
 
         base.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -95,13 +95,13 @@ public class addCustomer extends AppCompatActivity implements Validator.Validati
 
                 }else{
 
-                    Customer newCustomer = new Customer(Name, Surname, Address, Phone, Email);
+                    Customer newCustomer = new Customer(UniqueName, NameSurname, Address, Phone, Email);
 
                     FirebaseDatabase newCustomerDatabase = FirebaseDatabase.getInstance();
 
                     DatabaseReference base= newCustomerDatabase.getReference("customers");
                     //dodanie nazwy głównej wpisu w bazie
-                    base.child(Name).setValue(newCustomer);
+                    base.child(UniqueName).setValue(newCustomer);
 
                     Toast.makeText(getApplicationContext(), "Dodano nowe dane.", Toast.LENGTH_LONG).show();
                     Intent backtoMenu = new Intent(addCustomer.this, Menu.class);

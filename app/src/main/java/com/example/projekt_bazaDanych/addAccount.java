@@ -72,6 +72,10 @@ public class addAccount extends AppCompatActivity {
                                 Toast.makeText(addAccount.this, "Nie udało sie założyc konta", Toast.LENGTH_LONG).show();
                             } else {
                                 Toast.makeText(addAccount.this, "Nowe konto zostało utworzone", Toast.LENGTH_LONG).show();
+
+                                Intent backtoMenu = new Intent(addAccount.this, Menu.class);
+                                finishAndRemoveTask();
+                                startActivity(backtoMenu);
                             }
                         }
                     });

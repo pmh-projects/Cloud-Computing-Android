@@ -23,6 +23,7 @@ public class FirebaseDatabaseHelper {
         void DataIsUpdated();
         void DataIsDeleted();
     }
+
     public FirebaseDatabaseHelper() {
         mDatabase = FirebaseDatabase.getInstance();
         mReferenceCustomers = mDatabase.getReference("customers");

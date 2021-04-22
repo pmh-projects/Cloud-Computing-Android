@@ -52,8 +52,8 @@ public class RecyclerView_Config {
         }
 
         public void bind(Customer customer, String key) {
-            mName.setText(customer.getName());
-            mSurnname.setText(customer.getSurname());
+            mName.setText(customer.getUniqueName());
+            mSurnname.setText(customer.getNameSurname());
             mEmail.setText(customer.getEmail());
             mAddress.setText(customer.getAddress());
             mPhone.setText(customer.getPhone());
