@@ -13,7 +13,8 @@ public class Customer {
 
         private String UniqueName, NameSurname, Address, Phone, Email;
 
-        public Customer(String UniqueName,String NameSurname,String Address,String Phone,String Email) {  //konstruktor
+        //konstruktor z danymi
+        public Customer(String UniqueName,String NameSurname,String Address,String Phone,String Email) {
             this.UniqueName = UniqueName;
             this.NameSurname = NameSurname;
             this.Address = Address;

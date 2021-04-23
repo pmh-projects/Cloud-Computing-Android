@@ -80,7 +80,7 @@
         android:layout_marginTop="60dp"
         android:background="@drawable/new_edit_text"
         android:ems="10"
-        android:hint="Wyszukaj unikanlną NAZWĘ"
+        android:hint="Wyszukaj unikalną NAZWĘ"
         android:inputType="textPersonName"
         android:padding="6dp"
         app:layout_constraintBottom_toTopOf="@+id/addName"

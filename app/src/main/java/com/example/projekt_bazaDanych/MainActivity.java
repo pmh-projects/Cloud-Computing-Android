@@ -61,10 +61,11 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
+        //LOGOWANIE i przejscie do następnego activity
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Log.i("Info","Kliknieto");
+
                 String emailString = Name.getText().toString();
                 String passwordString = Password.getText().toString();
 

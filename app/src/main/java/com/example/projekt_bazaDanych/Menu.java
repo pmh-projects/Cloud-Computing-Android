@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,7 +25,9 @@ public class Menu extends AppCompatActivity {
         image = findViewById(R.id.iconView);
 
         //translateAnimation, które wyświetla ruszający się obrazek.
+        //Ustawienie pozycji ruchu
         TranslateAnimation animation = new TranslateAnimation(-450.0f, 450.0f, .0f, 0.0f);
+        //Ustawienia prędkości i ilości powtórzeń
         animation.setDuration(2900);
         animation.setRepeatCount(INFINITE);
         animation.setRepeatMode(2);
@@ -61,6 +64,7 @@ public class Menu extends AppCompatActivity {
 
     public void onLogout(View view) {
         Intent loginRecord = new Intent(this,MainActivity.class);
+        Toast.makeText(getApplicationContext(), "Wylogowano", Toast.LENGTH_LONG).show();
         finish();
         startActivity(loginRecord);
 
