@@ -1,4 +1,6 @@
 # <p align="center">Projekt zaliczeniowy na przedmiot "Cloud Computing w aplikacjach mobilnych dla platformy Android"</p>
+Informatyka i ekonometria, specj. Aplikacje informatyczne w biznesie
+<br>
 Grupa N22-31
 <br>
 Członkowie zespołu: Paweł Mach, Marcin Edel
@@ -6,7 +8,8 @@ Członkowie zespołu: Paweł Mach, Marcin Edel
 <h2 align="center"><b>Baza danych w Firebase</b></h2>
 <br>
 <p align="center">
-Jest to aplikacja umożliwiająca dodawanie, edycję, usuwanie klientów i wyświetlanie całej bazy.
+Jest to aplikacja umożliwiająca dodawanie, edycję i usuwanie klientów, a także wyświetlanie zawartości bazy.
+ <br>
 Testowana na NEXUS 4 API 27.
 </p>
 
@@ -94,6 +97,8 @@ Akceptacja spowoduje usuniecie wpisu z bazy danych.
 </p>
 <p align="center">
 Wprowadzenie niepoprawnej unikalnej nazwy sprawi, że nie zostanie zwrócony żaden wynik z bazy. Spowoduje to wyświetlenie stosownego komunikatu na ekranie.
+</p>
+<p align="center">
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(1).PNG">
 </p>
 <p align="center"><b>KLIENCI:</b></p>
@@ -133,4 +138,11 @@ ZAMKNIJ sprawia, że aplikacja zostanie zamknięta.
 </p>
 <p align="center">
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(3).PNG">
+</p>
+
+<p align="center">Wykorzystane animacje i obrazki:
+  <ul>
+    <li>Globe rotate matte loop (Royalty-Free License),</li>
+    <li>Earth Map (Creative Commons Zero - CC0).</li>
+ </ul>
 </p>
