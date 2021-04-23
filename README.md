@@ -151,7 +151,7 @@ ZAMKNIJ sprawia, że aplikacja zostanie zamknięta.
     <li>Earth Map (Creative Commons Zero - CC0).</li>
  </ul>
 </p>
-<p align="left">Licencja:</p>
+<p align="left">Licencja oprogramowania:</p>
 <img src=https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/gplv3-88x31.png>
 <p align="left">Dodatkowe informacje:</p>
 <p align="left">Na aplikacje składa się 7 klas odpowiedzialnych za jej funkcjonalności. Do tego utworzono 7 plików zawierających layout dla każdej z klas oraz osobne menu dla okienka z pełną zawartością bazy danych. Osobny komentarz w kodzie.
