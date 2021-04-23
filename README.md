@@ -19,13 +19,13 @@ Testowana na NEXUS 4 API 27.
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(23).PNG">
 </p>
 
-<p align="center"><b>Menu:</b></p>
+<p align="center"><b>MENU:</b></p>
 <p align="center">Po zalogowaniu pojawia się okienko z wyborem opcji 6 opcji.</p>
 
 <p align="center"><img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(22).PNG">
 </p>
 
-<p align="center"><b>Dodaj:</b></p>
+<p align="center"><b>DODAJ:</b></p>
 <p align="center">
 Umożliwia dodanie nowego klienta z jego unikalną nazwą, która ma na celu ułatwienie wyszukiwania w bazie i ułatwienie pracy z opcjami edycji, a także rozpoznanie klienta
 poprzez użytkownika w oknie "Lista klientów".</p>
@@ -51,7 +51,7 @@ Do walidacji danych zastosowany został Saripaar Validator.
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(18).PNG">
 </p>
 
-<p align="center"><b>Edycja:</b></p>
+<p align="center"><b>EDYCJA:</b></p>
 <p align="center">
 Błędne wpisanie danych:
 </p>
@@ -63,11 +63,14 @@ Prawidłowe wpisanie unikalnej szukanej nazwy spowoduje wypełnienie pól do edy
 </p>
 <p align="center">
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot(26).PNG">
+<img src=https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot.PNG>
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(13).PNG">
 </p>
 
 <p align="center">
-Po wprowadzeniu danych i kliknięciu edytuj dane zostaną zakutalizowane, co automatycznie jest widoczne w bazie danych.
+Po wprowadzeniu danych i kliknięciu edytuj pojawi się okno dialogowe z pytaniem o potwierdzenie decyzji.
+Zastosowany został AlerDialog.Builder z deklaracją przycisków "Tak" i "Cofnij". Zatwierdzenie decyzji powoduje natychmiastowe zmiany w bazie danych.
+Wybór "Cofnij" wywoła dialog.cancel(), co spowoduje zniknięcie okna.
 </p>
 <p align="center">
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(12).PNG">
@@ -79,14 +82,12 @@ W wypadku nie wypełnienia pola pojawi się informacja o konieczności jego uzup
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(9).PNG">
 </p>
 <p align="center"><b>
-Usuń:</b></p>
+USUŃ:</b></p>
 <p align="center">
-Kliknięcie w przycisk usuń spowoduje wyświetlenie okna dialogowego z pytaniem o potwierdzenie decyzji.
-Zastosowany został AlerDialog.Builder z deklaracją przycisków "Tak" i "Nie". 
-Wybór "Nie" wywoła dialog.cancel(), co spowoduje zniknięcie okna.
+Zastosowano ten sam mechanizm co przy edycji. Tym razem wybór "Tak" spowoduje usunięcie danych.
 </p>
 <p align="center">
-<img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(2).PNG">
+<img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot.PNG">
 </p>
 <p align="center">
 Akceptacja spowoduje usuniecie wpisu z bazy danych.
