@@ -50,9 +50,9 @@ public class addAccount extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null){
-                    Log.i("Info", "zalogowany");
+                    Log.i("Info", "Zalogowany");
                 }else{
-                    Log.i("Info","niezalogowany");
+                    Log.i("Info","Niezalogowany");
                 }
             }
         };
@@ -69,7 +69,7 @@ public class addAccount extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(!task.isSuccessful()) {
-                                Toast.makeText(addAccount.this, "Nie udało sie założyc konta", Toast.LENGTH_LONG).show();
+                                Toast.makeText(addAccount.this, "Proszę spróbować ponownie", Toast.LENGTH_LONG).show();
                             } else {
                                 Toast.makeText(addAccount.this, "Nowe konto zostało utworzone", Toast.LENGTH_LONG).show();
 

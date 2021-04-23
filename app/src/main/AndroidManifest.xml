@@ -30,8 +30,8 @@
             android:name=".addAccount"
             android:label="Dodaj nowy login" />
         <activity
-            android:name=".CustomerList"
-            android:label="Lista" />
+            android:name=".showCustomers"
+            android:label="Lista klientów" />
         <activity
             android:name=".addCustomer"
             android:label="Dodaj do bazy" />

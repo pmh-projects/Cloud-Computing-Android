@@ -21,11 +21,11 @@ public class Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        image = findViewById(R.id.sunView);
+        image = findViewById(R.id.iconView);
 
         //translateAnimation, które wyświetla ruszający się obrazek.
-        TranslateAnimation animation = new TranslateAnimation(-100.0f, 100.0f, .0f, 0.0f);
-        animation.setDuration(1500);
+        TranslateAnimation animation = new TranslateAnimation(-450.0f, 450.0f, .0f, 0.0f);
+        animation.setDuration(2900);
         animation.setRepeatCount(INFINITE);
         animation.setRepeatMode(2);
         animation.setFillAfter(true);
@@ -40,13 +40,13 @@ public class Menu extends AppCompatActivity {
         startActivity(addRecord);
     }
 
-    //"przycisk szukaj" - przejście do activity z możliwością wyszukania i edycji rekordu'u
+    //Przejście do activity z listą użytkowników
     public void onSearch(View view) {
-        Intent searchRecord = new Intent(this, CustomerList.class);
+        Intent searchRecord = new Intent(this, showCustomers.class);
         finish();
         startActivity(searchRecord);
     }
-
+    //Przejście do edycji
     public void onEdit(View view){
 
         Intent edit = new Intent(this, update.class);
@@ -66,6 +66,7 @@ public class Menu extends AppCompatActivity {
 
     }
 
+    //Przejście do dodawania nowego użytkownika
     public void onAddNA(View view) {
         Intent addNA = new Intent(this,addAccount.class);
         finish();

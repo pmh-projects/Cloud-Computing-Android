@@ -1,5 +1,12 @@
 package com.example.projekt_bazaDanych;
 
+import android.graphics.Typeface;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.AbsoluteSizeSpan;
+import android.text.style.StyleSpan;
+import android.widget.EditText;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Customer {
@@ -21,7 +28,7 @@ public class Customer {
         return UniqueName;
     }
 
-    public void setgetUniqueName(String UniqueName) {
+    public void setUniqueName(String UniqueName) {
         this.UniqueName = UniqueName;
     }
 
@@ -55,5 +62,12 @@ public class Customer {
 
     public void setEmail(String Email) {
         this.Email = Email;
+    }
+
+    //Wypisanie danych klienta w liście klientów
+    public String stringCustomer(){
+
+            return "\n"+UniqueName + ":" + "\n"+ NameSurname+ "\n\n" + Address + "\n" + Phone + "\n" + Email + "\n";
+
     }
 }

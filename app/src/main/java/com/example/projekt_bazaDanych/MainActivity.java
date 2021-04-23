@@ -134,20 +134,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-//    public void OnLogin(View view){
-//
-//        //pobiera tekst z edittext i wysyła do działającego w tle activity
-//        String name = Name.getText().toString();
-//        String password = Password.getText().toString();
-//        //zmienna action, za pomocą której rozpoznawane jest działanie do wykonania w "silniku"
-//        String action = "login";
-//
-//        //instancja klasy workInBackground z konkteksem this i przekazanie wartości to workInBackground do egzekucji
-//        workInBackground workInBackground = new workInBackground(this);
-//        workInBackground.execute(action, name, password);
-//
-//         }
-
     public void onClose(View view) {
         //zamknięcie programu
         System.exit(0);

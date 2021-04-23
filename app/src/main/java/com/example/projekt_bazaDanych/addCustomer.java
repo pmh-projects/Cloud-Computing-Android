@@ -75,7 +75,7 @@ public class addCustomer extends AppCompatActivity implements Validator.Validati
     }
 
 
-
+    //Tworzenie nowego klienta po udanej walidacji
     @Override
     public void onValidationSucceeded() {
 
@@ -85,11 +85,14 @@ public class addCustomer extends AppCompatActivity implements Validator.Validati
         Phone = phone.getText().toString().trim();
         Email = email.getText().toString().trim();
 
+        //Wyciągnięcie z bazy nazwy RootChild po unikalnej nazwie(UniqueName), która jest wpisana przez użytkownika w pole Wyszukaj...
         base = FirebaseDatabase.getInstance().getReference().child("customers").child(UniqueName);
+
 
         base.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                //if sprawdzający istnienie danych w bazie. Jeśli dany użytkownik istnieje, to nie zostanie utworzony nowy
                 if(dataSnapshot.exists()) {
                     Toast.makeText(getApplicationContext(), "Użytkownik o podanej nazwie istnieje w bazie.", Toast.LENGTH_LONG).show();
 

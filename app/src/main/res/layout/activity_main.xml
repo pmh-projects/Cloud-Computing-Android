@@ -32,7 +32,6 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="11dp"
         android:background="@drawable/new_button"
-        android:onClick="OnLogin"
         android:text="Zaloguj"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/onClose"
