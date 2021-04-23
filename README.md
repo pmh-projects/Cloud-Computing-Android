@@ -53,12 +53,6 @@ Do walidacji danych zastosowany został Saripaar Validator.
 
 <p align="center"><b>EDYCJA:</b></p>
 <p align="center">
-Błędne wpisanie danych:
-</p>
-<p align="center">
-<img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(15).PNG">
-</p>
-<p align="center">
 Prawidłowe wpisanie unikalnej szukanej nazwy spowoduje wypełnienie pól do edycji lub usunięcia klienta.
 </p>
 <p align="center">
@@ -79,9 +73,18 @@ Wybór "Cofnij" wywoła dialog.cancel(), co spowoduje zniknięcie okna.
 <p align="center">
 W wypadku nie wypełnienia pola pojawi się informacja o konieczności jego uzupełnienia. Również w tej klasie zastosowana Saripaar Validator.
 </p>
+
 <p align="center">
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(9).PNG">
 </p>
+
+<p align="center">
+Błędne wpisanie danych:
+</p>
+<p align="center">
+<img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(15).PNG">
+</p>
+
 <p align="center"><b>
 USUŃ:</b></p>
 <p align="center">
