@@ -63,7 +63,7 @@ Prawidłowe wpisanie unikalnej szukanej nazwy spowoduje wypełnienie pól do edy
 </p>
 <p align="center">
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot(26).PNG">
-<img src=https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot.PNG>
+<img src=https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot2.PNG>
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(13).PNG">
 </p>
 
