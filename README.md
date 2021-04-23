@@ -107,6 +107,7 @@ Wprowadzenie niepoprawnej unikalnej nazwy sprawi, że nie zostanie zwrócony ża
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(1).PNG">
 </p>
 <p align="center"><b>KLIENCI:</b></p>
+<p align="center">
 Wybór ocji menu "Klienci" powoduje wyświetlenie wszystkich wpisów z bazy.
 Do wyświetlenia zawartości bazy wykorzystano ListView, ArrayList<String>, ArrayAdapter<String>, ChildEventListener oraz metodę stringCustomer(), która
 zwraca wartości z bazy poprzez return.
