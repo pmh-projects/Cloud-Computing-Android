@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:id="@android:id/text1"
+    android:layout_width="fill_parent"
+    android:layout_height="230dp"
+    android:layout_gravity="center"
+    android:background="#339ED4DC"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:shadowColor="#A1E1F1"
+    android:shadowDx="3"
+    android:shadowDy="3"
+    android:shadowRadius="5"
+    android:textAlignment="center"
+    android:textColor="#FFFFFF"
+    android:textSize="25dp" />
