@@ -3,7 +3,7 @@ Informatyka i ekonometria, specj. Aplikacje informatyczne w biznesie
 <br>
 Grupa N22-31
 <br>
-Członkowie zespołu: Paweł Mach, Marcin Edel
+Paweł Mach, Marcin Edel
 <br><br>
 <h2 align="center"><b>Baza danych w Firebase</b></h2>
 <br>
