@@ -13,7 +13,7 @@ Jest to aplikacja umożliwiająca dodawanie, edycję i usuwanie klientów, a tak
 Testowana na NEXUS 4 API 27.
 </p>
 
-<p align="center"><b>Okienko logowania</b></p>
+<p align="center"><b>LOGOWANIE</b></p>
 
 <p align="center">W wypadku wprowadzenia niepoprawnych danych nie można przejść do następnego okna.
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(23).PNG">
