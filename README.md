@@ -8,9 +8,9 @@ Paweł Mach, Marcin Edel
 <h2 align="center"><b>Baza danych w Firebase</b></h2>
 <br>
 <p align="center">
-Jest to aplikacja umożliwiająca dodawanie, edycję i usuwanie klientów, a także wyświetlanie zawartości bazy.
+Aplikacja umożliwiająca dodawanie, edycję i usuwanie klientów, a także wyświetlanie zawartości bazy.
  <br>
-Testowana na NEXUS 4 API 27.
+Tworzona i testowana na NEXUS 4 API 27.
 </p>
 
 <p align="center"><b>LOGOWANIE</b></p>
@@ -88,13 +88,13 @@ Błędne wpisanie danych:
 <p align="center"><b>
 USUŃ:</b></p>
 <p align="center">
-Zastosowano ten sam mechanizm co przy edycji. Tym razem wybór "Tak" spowoduje usunięcie danych.
+Zastosowano ten sam mechanizm akceptacji, co przy edycji. Tym razem wybór "Tak" spowoduje usunięcie danych.
 </p>
 <p align="center">
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot.PNG">
 </p>
 <p align="center">
-Akceptacja spowoduje usuniecie wpisu z bazy danych.
+Akceptacja spowoduje usunięcie wpisu z bazy danych.
 </p>
 <p align="center">
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(11).PNG">
@@ -153,3 +153,9 @@ ZAMKNIJ sprawia, że aplikacja zostanie zamknięta.
 </p>
 <p align="left">Licencja:</p>
 <img src=https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/gplv3-88x31.png>
+<p align="left">Dodatkowe informacje:</p>
+<p align="left">Na aplikacje składa się 7 klas odpowiedzialnych za jej funkcjonalności. Do tego utworzono 7 plików zawierających layout dla każdej z klas oraz osobne menu dla okienka z pełną zawartością bazy danych. Osobny komentarz w kodzie.
+<br>
+ Więcej szczegółów: pawelmach@pm.me
+</p>
+
