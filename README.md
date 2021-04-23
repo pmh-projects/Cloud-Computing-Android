@@ -146,3 +146,5 @@ ZAMKNIJ sprawia, że aplikacja zostanie zamknięta.
     <li>Earth Map (Creative Commons Zero - CC0).</li>
  </ul>
 </p>
+<p align="left">Licencja:</p>
+<img src=https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/gplv3-88x31.png>
