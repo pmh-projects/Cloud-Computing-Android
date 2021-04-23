@@ -22,9 +22,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import java.util.List;
 
-
-
-
 public class addCustomer extends AppCompatActivity implements Validator.ValidationListener {
 
     //Wymuszenie wpisania wartości do pola address
@@ -74,7 +71,6 @@ public class addCustomer extends AppCompatActivity implements Validator.Validati
         startActivity(backtoMenu);
     }
 
-
     //Tworzenie nowego klienta po udanej walidacji
     @Override
     public void onValidationSucceeded() {
@@ -87,7 +83,6 @@ public class addCustomer extends AppCompatActivity implements Validator.Validati
 
         //Wyciągnięcie z bazy nazwy RootChild po unikalnej nazwie(UniqueName), która jest wpisana przez użytkownika w pole Wyszukaj...
         base = FirebaseDatabase.getInstance().getReference().child("customers").child(UniqueName);
-
 
         base.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override

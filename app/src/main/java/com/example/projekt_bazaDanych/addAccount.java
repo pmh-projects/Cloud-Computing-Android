@@ -32,7 +32,6 @@ public class addAccount extends AppCompatActivity {
     FirebaseAuth mAuth;
     FirebaseAuth.AuthStateListener mAuthListener;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,7 +82,6 @@ public class addAccount extends AppCompatActivity {
             }
         });
 
-
         sName = (EditText)findViewById(R.id.introLogin);
         sPassword = (EditText)findViewById(R.id.introPassword);
         btnLogin = findViewById(R.id.btnLogin);
@@ -103,8 +101,6 @@ public class addAccount extends AppCompatActivity {
             mAuth.removeAuthStateListener(mAuthListener);
         }
     }
-
-
 
     public void onClose(View view) {
         Intent intent = new Intent(this, Menu.class);
