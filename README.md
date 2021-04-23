@@ -74,6 +74,7 @@ Wybór "Cofnij" wywoła dialog.cancel(), co spowoduje zniknięcie okna.
 </p>
 <p align="center">
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(12).PNG">
+ <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot3.PNG">
 </p>
 <p align="center">
 W wypadku nie wypełnienia pola pojawi się informacja o konieczności jego uzupełnienia. Również w tej klasie zastosowana Saripaar Validator.
