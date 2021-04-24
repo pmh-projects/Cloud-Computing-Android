@@ -20,7 +20,7 @@ Tworzona i testowana na NEXUS 4 API 27.
 </p>
 
 <p align="center"><b>MENU:</b></p>
-<p align="center">Po zalogowaniu pojawia się okienko z wyborem opcji 6 opcji.</p>
+<p align="center">Po zalogowaniu pojawia się okienko z wyborem 6 opcji.</p>
 
 <p align="center"><img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(22).PNG">
 </p>
