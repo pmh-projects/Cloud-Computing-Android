@@ -150,7 +150,7 @@ ZAMKNIJ sprawia, że aplikacja zostanie zamknięta.
   <ul>
     <li>Globe rotate matte loop (Royalty-Free License),</li>
     <li>Earth Map (Creative Commons Zero - CC0),</li>
-    <li>Saripaar Validator - licencja Apache 2.0.<li>
+    <li>Saripaar Validator - licencja Apache 2.0.</li>
  </ul>
 </p>
 <p align="left">Licencja oprogramowania:</p>
