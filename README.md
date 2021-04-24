@@ -146,10 +146,11 @@ ZAMKNIJ sprawia, że aplikacja zostanie zamknięta.
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(3).PNG">
 </p>
 
-<p align="center">Wykorzystane animacje i obrazki:
+<p align="center">Wykorzystane zewnętrzne zasoby:
   <ul>
     <li>Globe rotate matte loop (Royalty-Free License),</li>
-    <li>Earth Map (Creative Commons Zero - CC0).</li>
+    <li>Earth Map (Creative Commons Zero - CC0),</li>
+    <li>Saripaar Validator - licencja Apache 2.0.<li>
  </ul>
 </p>
 <p align="left">Licencja oprogramowania:</p>
