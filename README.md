@@ -157,6 +157,5 @@ ZAMKNIJ sprawia, że aplikacja zostanie zamknięta.
 <p align="left">Dodatkowe informacje:</p>
 <p align="left">Na aplikacje składa się 7 klas odpowiedzialnych za jej funkcjonalności. Do tego utworzono 7 plików zawierających layout dla każdej z klas oraz osobne menu dla okienka z pełną zawartością bazy danych. Osobny komentarz w kodzie.
 <br>
- Więcej szczegółów: pawelmach@pm.me
 </p>
 
