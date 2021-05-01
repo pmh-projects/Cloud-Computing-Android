@@ -33,7 +33,7 @@ import static java.security.AccessController.getContext;
 
 public class update extends AppCompatActivity implements Validator.ValidationListener{
     //implements Validator.ValidationListener
-    @NotEmpty(message = "Pole adres nie może być puste")
+    @NotEmpty(message = "Pole nie może być puste")
     EditText address, name, surname, phone;
     //Walidacja wymuszająca wprowadzenie prawidłowego e-mail'u email@email.com
     @Email(message = "Wpisz poprawny adres e-mail")
