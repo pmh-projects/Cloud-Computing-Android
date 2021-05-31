@@ -143,7 +143,7 @@ Opcja WYLOGUJ powoduje wylogowanie się z bazy i powrót do okienka z logowanie.
 ZAMKNIJ sprawia, że aplikacja zostanie zamknięta.
 </p>
 <p align="center">
-<img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(3).PNG">
+<img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(33).PNG">
 </p>
 
 <p align="center">Wykorzystane zewnętrzne zasoby:
