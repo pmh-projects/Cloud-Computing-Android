@@ -13,8 +13,8 @@ Paweł Mach, Marcin Edel
 * [Edycja](#edycja)
 * [Usun](#usun)
 * [Klienci](#klienci)
-* [Zakladanie konta](#zakladanie-konta)
-* [Wylogowanie i zamykanie](#zWylogowanie-i-zamykanie)
+* [Zakładanie konta](#zakładanie-konta)
+* [Wylogowanie zamykanie](#Wylogowanie-zamykanie)
 
 <br>
 <p align="center">
@@ -116,6 +116,7 @@ Wprowadzenie niepoprawnej unikalnej nazwy sprawi, że nie zostanie zwrócony ża
 <p align="center">
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(1).PNG">
 </p>
+
 ## Klienci
 <p align="center">
 Wybór ocji menu "Klienci" powoduje wyświetlenie wszystkich wpisów z bazy.
@@ -133,6 +134,7 @@ Do utworzenia Menu wykorzystano onCreateOptionsMenu, onOptionsItemSelected, Menu
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(7).PNG">
 </p>
 <p align="center"><b>
+ 
 ## Zakładanie konta
 </b></p>
 <p align="center">
@@ -147,7 +149,7 @@ Utworzenie nowe konta automatycznie zostanie odnotowane w bazie Firebase w zakł
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(4).PNG">
 </p>
 
-## Wylogowanie i zamykanie
+## Wylogowanie zamykanie
 <p align="center">
 Opcja WYLOGUJ powoduje wylogowanie się z bazy i powrót do okienka z logowanie.
 ZAMKNIJ sprawia, że aplikacja zostanie zamknięta.
