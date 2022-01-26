@@ -5,7 +5,17 @@ Grupa N22-31
 <br>
 Paweł Mach, Marcin Edel
 <br><br>
-<h2 align="center"><b>Baza danych w Firebase</b></h2>
+
+## Baza danych w Firebase
+* [Logowanie](#logowanie)
+* [Menu](#menu)
+* [Dodaj](#dodaj)
+* [Edycja](#edycja)
+* [Usun](#usun)
+* [Klienci](#klienci)
+* [Zakladanie konta](#zakladanie-konta)
+* [Wylogowanie i zamykanie](#zWylogowanie-i-zamykanie)
+
 <br>
 <p align="center">
 Aplikacja umożliwiająca dodawanie, edycję i usuwanie klientów, a także wyświetlanie zawartości bazy.
@@ -13,19 +23,20 @@ Aplikacja umożliwiająca dodawanie, edycję i usuwanie klientów, a także wyś
 Tworzona i testowana na NEXUS 4 API 27.
 </p>
 
-<p align="center"><b>LOGOWANIE</b></p>
+
+## Logowanie
 
 <p align="center">W wypadku wprowadzenia niepoprawnych danych nie można przejść do następnego okna.
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(23).PNG">
 </p>
 
-<p align="center"><b>MENU:</b></p>
+## Menu
 <p align="center">Po zalogowaniu pojawia się okienko z wyborem 6 opcji.</p>
 
 <p align="center"><img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(22).PNG">
 </p>
 
-<p align="center"><b>DODAJ:</b></p>
+## Dodaj
 <p align="center">
 Umożliwia dodanie nowego klienta z jego unikalną nazwą, która ma na celu ułatwienie wyszukiwania w bazie i ułatwienie pracy z opcjami edycji, a także rozpoznanie klienta
 poprzez użytkownika w oknie "Lista klientów".</p>
@@ -51,7 +62,7 @@ Do walidacji danych zastosowany został Saripaar Validator.
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(18).PNG">
 </p>
 
-<p align="center"><b>EDYCJA:</b></p>
+## Edycja
 <p align="center">
 Prawidłowe wpisanie unikalnej szukanej nazwy spowoduje wypełnienie pól do edycji lub usunięcia klienta.
 </p>
@@ -85,8 +96,7 @@ Błędne wpisanie danych:
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(15).PNG">
 </p>
 
-<p align="center"><b>
-USUŃ:</b></p>
+## Usun
 <p align="center">
 Zastosowano ten sam mechanizm akceptacji, co przy edycji. Tym razem wybór "Tak" spowoduje usunięcie danych.
 </p>
@@ -106,7 +116,7 @@ Wprowadzenie niepoprawnej unikalnej nazwy sprawi, że nie zostanie zwrócony ża
 <p align="center">
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(1).PNG">
 </p>
-<p align="center"><b>KLIENCI:</b></p>
+## Klienci
 <p align="center">
 Wybór ocji menu "Klienci" powoduje wyświetlenie wszystkich wpisów z bazy.
 Do wyświetlenia zawartości bazy wykorzystano ListView, ArrayList<String>, ArrayAdapter<String>, ChildEventListener oraz metodę stringCustomer(), która
@@ -123,7 +133,7 @@ Do utworzenia Menu wykorzystano onCreateOptionsMenu, onOptionsItemSelected, Menu
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(7).PNG">
 </p>
 <p align="center"><b>
-ZAŁÓŻ KONTO:
+## Zakładanie konta
 </b></p>
 <p align="center">
 Istnieje możliwość dodania nowego konta użytkownika aplikacji. 
@@ -137,7 +147,7 @@ Utworzenie nowe konta automatycznie zostanie odnotowane w bazie Firebase w zakł
 <img src="https://github.com/pmh-projects/projektAndroid_bazaDanych/blob/master/screenshots/screenshot%20(4).PNG">
 </p>
 
-<p align="center"><b>WYLOGUJ I ZAMKNIJ</b></p>
+## Wylogowanie i zamykanie
 <p align="center">
 Opcja WYLOGUJ powoduje wylogowanie się z bazy i powrót do okienka z logowanie.
 ZAMKNIJ sprawia, że aplikacja zostanie zamknięta.
