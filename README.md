@@ -14,7 +14,7 @@ Paweł Mach, Marcin Edel
 * [Usun](#usun)
 * [Klienci](#klienci)
 * [Zakładanie konta](#zakładanie-konta)
-* [Wylogowanie zamykanie](#Wylogowanie-zamykanie)
+* [Wylogowanie i zamykanie](#Wylogowanie-i-zamykanie)
 
 <br>
 <p align="center">
